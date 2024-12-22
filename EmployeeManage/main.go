@@ -1,4 +1,4 @@
-package Employee
+package EmployeeManage
 
 import "fmt"
 

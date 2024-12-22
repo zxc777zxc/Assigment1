@@ -1,4 +1,4 @@
-package Employee
+package EmployeeManage
 
 import (
 	"fmt"
@@ -27,11 +27,11 @@ type Company struct {
 }
 
 func (fte FullTimeEmployee) GetDetails() string {
-	return fmt.Sprintf("Full-Time Employee: ID=%d, Name=%s, Salary=%d Tenge", fte.ID, fte.Name, fte.Salary)
+	return fmt.Sprintf("Full-Time EmployeeManage: ID=%d, Name=%s, Salary=%d Tenge", fte.ID, fte.Name, fte.Salary)
 }
 
 func (pte PartTimeEmployee) GetDetails() string {
-	return fmt.Sprintf("Part-Time Employee: ID=%d, Name=%s, Hourly Rate=%d Tenge, Hours Worked=%.2f", pte.ID, pte.Name, pte.HourlyRate, pte.HoursWorked)
+	return fmt.Sprintf("Part-Time EmployeeManage: ID=%d, Name=%s, Hourly Rate=%d Tenge, Hours Worked=%.2f", pte.ID, pte.Name, pte.HourlyRate, pte.HoursWorked)
 }
 
 func (c *Company) AddEmployee(emp Employee) {
@@ -43,7 +43,7 @@ func (c *Company) AddEmployee(emp Employee) {
 	default:
 		fmt.Println("Unknown employee type")
 	}
-	fmt.Println("Employee added successfully")
+	fmt.Println("EmployeeManage added successfully")
 }
 
 func (c *Company) ListEmployees() {
